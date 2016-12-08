@@ -58,7 +58,7 @@
 /*图片导航*/
 #slideBox {
     position: absolute;
-    padding: 10px;
+    padding: 5px 12px;
     height: 15px;
     bottom: 15px;
     left: 50%;
