@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*carousel Component*/
+#slide {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #a10;
+}
+#slideWrapper {
+    position: absolute;
+    width: 9999px;
+    z-index: 10;
+}
+#slideWrapper li {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+#slideWrapper li a {
+    display: block;
+}
+
+/*左右按钮*/
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    font-size: 36px;
+    font-family: '';
+    line-height: 40px;
+    color: #fff;
+}
+#prev {
+    left: 20px;
+}
+#next {
+    right: 20px;
+}
+#slide:hover #prev, #slide:hover #next {
+    display: block;
+}
+#prev:hover, #next:hover {
+    background: rgba(0,0,0,.7);
+}
+
+/*图片导航*/
+#slideBox {
+    position: absolute;
+    padding: 10px;
+    height: 15px;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -75px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    z-index: 20;
+}
+#slideBox span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+}
+#slideBox span.on {
+    background: rgba(255,255,255,.6);
+}
